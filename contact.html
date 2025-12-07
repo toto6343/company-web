@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NextByte</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+            <h1><a href="index.html">NextByte</a></h1>
+
+            <ul id="gnb">
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="util">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <figure class="sub-visual">
+        <div class="inner">
+            <h1>Contact Us</h1>
+            <p>궁금하신 사항이 있으시면 언제든지 연락주세요</p>
+        </div>
+    </figure>
+
+    <section class="contact-info">
+        <div class="inner">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>본사</h3>
+                    <p>
+                        인천광역시 부평구 부평동 65-7<br>
+                        NextByte Tower 10F
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>전화</h3>
+                    <p>
+                        대표번호: 032-111-1234<br>
+                        팩스: 032-111-1235
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>이메일</h3>
+                    <p>
+                        일반문의: info@nextbyte.com<br>
+                        기술지원: support@nextbyte.com
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>운영시간</h3>
+                    <p>
+                        평일: 09:00 - 18:00<br>
+                        주말 및 공휴일 휴무
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="inner">
+            <div class="form-container">
+                <div class="form-intro">
+                    <h2>문의하기</h2>
+                    <p>
+                        프로젝트 상담, 제품 문의, 파트너십 제안 등 
+                        모든 문의사항을 남겨주시면 빠르게 답변 드리겠습니다.
+                    </p>
+                    <div class="contact-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24시간 내 답변</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>전문가 상담</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>맞춤형 솔루션 제안</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">이름 *</label>
+                            <input type="text" id="name" name="name" required placeholder="홍길동">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">회사명</label>
+                            <input type="text" id="company" name="company" placeholder="(주)NextByte">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">이메일 *</label>
+                            <input type="email" id="email" name="email" required placeholder="example@company.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">연락처 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">문의 유형 *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">선택해주세요</option>
+                            <option value="sales">제품 구매 문의</option>
+                            <option value="technical">기술 지원</option>
+                            <option value="partnership">파트너십 제안</option>
+                            <option value="demo">제품 데모 요청</option>
+                            <option value="other">기타 문의</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">문의 내용 *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="문의하실 내용을 상세히 입력해주세요"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            개인정보 수집 및 이용에 동의합니다 
+                            <a href="#" class="privacy-link">(자세히 보기)</a>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">
+                            마케팅 정보 수신에 동의합니다 (선택)
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> 문의하기
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="inner">
+            <h2>오시는 길</h2>
+            <div class="map-container">
+                <div id="map" class="map-placeholder"></div>
+                <div class="map-info">
+                    <h3>대중교통 이용</h3>
+                    <ul>
+                        <li>
+                            <strong>지하철</strong><br>
+                            1호선 부평역 3번 출구에서 도보 5분
+                        </li>
+                        <li>
+                            <strong>버스</strong><br>
+                            15, 24, 45, 67번 버스 이용<br>
+                            부평역 정류장 하차
+                        </li>
+                    </ul>
+
+                    <h3>자가용 이용</h3>
+                    <ul>
+                        <li>
+                            <strong>주차</strong><br>
+                            건물 지하 1~3층 주차장 이용 가능<br>
+                            방문객 2시간 무료 주차 지원
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="global-offices">
+        <div class="inner">
+            <h2>Global Offices</h2>
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3>Seoul Office</h3>
+                    <p>
+                        서울특별시 강남구 테헤란로 123<br>
+                        NextByte 강남센터 5F<br>
+                        Tel: 02-1234-5678
+                    </p>
+                </div>
+
+                <div class="office-card">
+                    <h3>Singapore Office</h3>
+                    <p>
+                        1 Raffles Place, #40-01<br>
+                        Singapore 048616<br>
+                        Tel: +65 6123 4567
+                    </p>
+                </div>
+
+                <div class="office-card">
+                    <h3>Tokyo Office</h3>
+                    <p>
+                        東京都港区六本木 1-2-3<br>
+                        NextByte Tokyo 10F<br>
+                        Tel: +81 3-1234-5678
+                    </p>
+                </div>
+
+                <div class="office-card">
+                    <h3>San Francisco Office</h3>
+                    <p>
+                        123 Market Street, Suite 500<br>
+                        San Francisco, CA 94105<br>
+                        Tel: +1 415-123-4567
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner">
+            <div class="upper">
+                <h1>NextByte</h1>
+                <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Family Site</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="lower">
+                <address>
+                    인천광역시 부평구 부평동 65-7<br>
+                    TEL : 032-111-1234 C.P : 010-1234-5678
+                </address>
+                <p>
+                    2020 NextByte &copy; copyright all right reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 지도 초기화 스크립트 -->
+    <script>
+        // 인천 부평구 NextByte 본사 좌표
+        var map = L.map('map').setView([37.4930, 126.7247], 16);
+
+        // OpenStreetMap 타일 레이어 추가
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // 커스텀 마커 아이콘 (선택사항)
+        var customIcon = L.divIcon({
+            className: 'custom-marker',
+            html: '<i class="fas fa-map-marker-alt" style="font-size: 36px; color: #3b82f6;"></i>',
+            iconSize: [36, 36],
+            iconAnchor: [18, 36]
+        });
+
+        // NextByte 본사 마커 추가
+        L.marker([37.4930, 126.7247], {icon: customIcon}).addTo(map)
+            .bindPopup('<div style="text-align: center; font-family: Poppins, sans-serif;"><strong style="font-size: 16px; color: #1e293b;">NextByte 본사</strong><br><span style="font-size: 13px; color: #64748b;">인천광역시 부평구 부평동 65-7<br>NextByte Tower 10F</span></div>')
+            .openPopup();
+    </script>
+
+</body>
+</html>
